@@ -6,7 +6,9 @@
 
 <h1>{{ survey.title }}</h1>
 <p>{{ survey.instructions }}</p>
-<a href="/questions/0" class="btn btn-primary">Start Survey</a>
+<form method="POST" action="/reset-responses">
+    <button type="submit">Start Survey</button>
+</form>
 
 
 {% endblock %}
